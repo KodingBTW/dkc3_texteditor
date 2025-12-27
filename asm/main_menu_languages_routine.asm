@@ -241,7 +241,7 @@ ptr_sound_options:
 read_language_options:
 	LDA $1A						; Load language setting into A
 	INC $1A						; Increment for the next read
-	LDA #$0000					; Mask 00=FRANCAIS, 01=ENGLISH ---> FORCE SPANISH NOW
+	LDA #$0000					; Mask 00=FRANCAIS, 01=ENGLISH ---> FORCE FRENCH NOW
 	ASL							; Multiply by 2
 	TAY							; Y = index
 	LDX ptr_language_options,Y	; Load pointer from table
@@ -289,3 +289,4 @@ write_to_cpu:
 	INY
 	STY $1C3F					; Store updated offset
 	RTS							; Return
+
