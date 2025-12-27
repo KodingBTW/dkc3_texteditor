@@ -5,7 +5,7 @@
 org $407FC0
 change_default_language:
 	REP #$20
-	LDA #$0001				; Force spanish startup default language
+	LDA #$0001				; Force french startup default language
 	STA $06D6				; Write in memory
 	LDA #$0000
 	TCD
@@ -78,7 +78,7 @@ change_language_up:
     STZ $38,X                  	; Clear menu entry at index X
 
     LDA $06D6                  	; Load current language flag
-    LDA #$0001                 	; Force french language (SPANISH NOW)
+    LDA #$0001                 	; Force french language (FRENCH NOW)
     STA $06D6                  	; Store new language flag
 	
     SEP #$20                   	; A = 8-bit mode
@@ -139,7 +139,7 @@ change_language_down:
     STZ $38,X                  	; Clear menu entry at index X
 
     LDA $06D6                  	; Load current language flag
-    LDA #$0001                 	; Force french language (SPANISH NOW)
+    LDA #$0001                 	; Force french language (FRENCH NOW)
     STA $06D6                  	; Store language flag
 
     SEP #$20                   	; A = 8-bit mode
@@ -289,4 +289,5 @@ write_to_cpu:
 	INY
 	STY $1C3F					; Store updated offset
 	RTS							; Return
+
 
