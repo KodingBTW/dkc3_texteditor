@@ -20,7 +20,7 @@ dkc3_texteditor extract -l en -r "Donkey Kong Country 3.sfc" -f "dkc3_script" -t
 ```
 Insert:
 ```
-dkc3_texteditor insert -l en -r %Donkey Kong Country 3.sfc% -f "dkc3_script_en" -t "script/dkc3_en.tbl"
+dkc3_texteditor insert -l en -r %Donkey Kong Country 3.sfc% -f "dkc3_script_en" -t "dkc3_en.tbl"
 ```
 
 Once extracted, the tool will generate 20 text files. These can be easily edited using any text editor, such as Notepad++. After editing, the files can be reinserted into the game.
