@@ -1,4 +1,4 @@
-This tool allows simple extraction and insertion of text from the SNES USA version of Donkey Kong Country 3.
+This tool allow simple text extraction and insertion from the SNES USA version of Donkey Kong Country 3.
 The pointer table is automatically updated, and all required table files are included.
 
 ## Usage
@@ -27,9 +27,9 @@ Once extracted, the tool will generate 20 text files. These can be easily edited
 
 ### Notes
 
-The game uses Huffman compression, which means the number of distinct characters is limited by the size of the dictionary. This program does not modify the dictionary entries; instead, it compresses the text using the original dictionary.
+The game uses Huffman compression, which means the number of characters is limited by the size of the dictionary. This program does not modify the dictionary entries; instead, it compresses the text using the original dictionary.
 
-As a recommendation, if you plan to translate the game into another language, it is advised to edit the French script, as it allows a larger character set (15 additional characters).
+As a recommendation, if you plan to translate the game into another language, I suggest to edit the French script, because as it has a larger character set (15 additional characters).
 
 The project also includes an optional ASM routine written for the SNES Asar assembler. This routine sets French as the default language and disables English.
 
